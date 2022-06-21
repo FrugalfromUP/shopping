@@ -1,0 +1,15 @@
+<section>
+  {{ selected.length }}
+  <ul *ngIf="selected.length >= 1; else def">
+    <li *ngFor="let list of selected" class="list">
+      {{ list.name }}
+      <button (click)="removeItems(list.id)" class="addBtn">Purchased</button>
+    </li>
+  </ul>
+
+  <ng-template #def>
+    <ul>
+      <li class="list">No items selected</li>
+    </ul>
+  </ng-template>
+</section>

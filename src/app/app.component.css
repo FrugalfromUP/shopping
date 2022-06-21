@@ -1,0 +1,21 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(144, 7, 60);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+    color: white;
+    font-size: large;
+}
+
+.button {
+    padding: 7px 15px;
+    background-color: yellowgreen;
+    cursor: pointer;
+    color: rgb(225, 12, 12);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}

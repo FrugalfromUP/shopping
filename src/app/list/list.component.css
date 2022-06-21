@@ -1,0 +1,29 @@
+ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list {
+    width: 50%;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #a8d8e8;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.addBtn {
+    padding: 7px 40px;
+    color: yellowgreen;
+    margin-top: 50px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(93, 39, 39);
+    cursor: pointer;
+    font-size: 16px;
+}

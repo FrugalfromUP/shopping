@@ -1,0 +1,24 @@
+<header class="header">
+  <h3>Shopping List</h3>
+
+  <div *ngIf="previewValue; then preview; else list"></div>
+  <ng-template #preview>
+    <button (click)="onToggle()" class="button">Preview</button>
+  </ng-template>
+
+  <ng-template #list>
+    <button (click)="onToggle()" class="button">List</button>
+  </ng-template>
+</header>
+
+<app-list
+  [items]="listItems"
+  (getItem)="sendSelectedItems($event)"
+  *ngIf="previewValue"
+></app-list>
+<app-preview
+  [items]="listItems"
+  [selected]="selectedItems"
+  *ngIf="!previewValue"
+  (leftItems)="getLeftItems($event)"
+></app-preview>

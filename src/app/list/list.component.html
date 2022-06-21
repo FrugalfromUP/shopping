@@ -1,0 +1,13 @@
+<section>
+  <ul>
+    <li *ngFor="let list of items" class="list">
+      {{ list.name }}
+      <input
+        type="checkbox"
+        (change)="onSelect(list.id)"
+        [checked]="list.purchased"
+      />
+    </li>
+    <button (click)="createList()" class="addBtn">Create List</button>
+  </ul>
+</section>

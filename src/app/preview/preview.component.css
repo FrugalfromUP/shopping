@@ -1,0 +1,38 @@
+.button {
+  padding: 7px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.addBtn {
+  padding: 5px 15px;
+  color: rgb(233, 99, 99);
+  border: 1px solid rgb(233, 99, 99);
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
